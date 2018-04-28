@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: Elf2
   m_EditorClassIdentifier: 
   _unitName: 
-  _unitMoveSpeed: 1.5
-  _unitAttackRange: 5
+  _unitMoveSpeed: 2
+  _unitAttackRange: 10
   _unitAttackDamage: 2
   _unitAttackSpeed: 1
   _unitMaxHealth: 20

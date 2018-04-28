@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Name: Elf
   m_EditorClassIdentifier: 
   _unitName: Elf
-  _unitMoveSpeed: 1.5
-  _unitAttackRange: 5
-  _unitAttackDamage: 2
+  _unitMoveSpeed: 2
+  _unitAttackRange: 10
+  _unitAttackDamage: 5
   _unitAttackSpeed: 1
   _unitMaxHealth: 20
-  _unitCurrentHealth: 20
   _bIsPlayerUnit: 1
   _type: 0
   _race: 0

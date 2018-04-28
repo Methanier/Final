@@ -9,8 +9,8 @@ namespace GPE338Final
     {
         public interface IDamagable
         {
-            void TakeDamage();
-            void Heal();
+            void TakeDamage(float damage, GameObject instigator);
+            void Heal(float amount, GameObject instigator);
             void Die();
         }
     }

@@ -40,7 +40,6 @@ namespace GPE338Final
             private float _unitAttackSpeed;
             [SerializeField]
             private float _unitMaxHealth;
-            [SerializeField]
             private float _unitCurrentHealth;
             [SerializeField]
             private bool _bIsPlayerUnit;

@@ -4,6 +4,7 @@ using System.Linq;
 using UnityEngine;
 using GPE338Final.Units;
 using GPE338Final.Projectiles;
+using GPE338Final.CustomEvents;
 
 public class GameManger : MonoBehaviour {
 
@@ -15,6 +16,8 @@ public class GameManger : MonoBehaviour {
 
     public UnitSpawn playerSpawn;
     public UnitSpawn enemySpawn;
+
+    public string UNIT_DEATH;
 
     private void Awake()
     {
@@ -32,11 +35,12 @@ public class GameManger : MonoBehaviour {
     // Use this for initialization
     void Start () {
         LoadResources();
+        UNIT_DEATH = "UNIT_DEATH";
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
     public void SpawnPlayerUnit(UnitType type, UnitRace race)
@@ -52,7 +56,7 @@ public class GameManger : MonoBehaviour {
         
         if (unitPref != null)
         {
-            GameObject newUnit = ObjectPoolManager.instance.GetObject(unitPref.gameObject, playerSpawn.tf.position, playerSpawn.tf.rotation);
+            ObjectPoolManager.instance.GetObject(unitPref.gameObject, playerSpawn.tf.position, playerSpawn.tf.rotation);
         }
     }
 
@@ -67,23 +71,8 @@ public class GameManger : MonoBehaviour {
 
         if(unitPref != null)
         {
-            GameObject newUnit = ObjectPoolManager.instance.GetObject(unitPref.gameObject, enemySpawn.tf.position, enemySpawn.tf.rotation);
+            ObjectPoolManager.instance.GetObject(unitPref.gameObject, enemySpawn.tf.position, enemySpawn.tf.rotation);
         }
-
-    }
-
-    public void TestOne(int i)
-    {
-
-    }
-
-    public void TestTwo(float f)
-    {
-
-    }
-
-    public void TestThree(string s)
-    {
 
     }
 

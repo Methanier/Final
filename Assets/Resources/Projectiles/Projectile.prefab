@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 4245001847163438}
   - component: {fileID: 212262044554274558}
   - component: {fileID: 114154587598518832}
-  m_Layer: 0
+  - component: {fileID: 58442821792574854}
+  m_Layer: 10
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,12 +36,27 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1523685909791788}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.85749, y: -2.0681696, z: 0}
+  m_LocalPosition: {x: -18.328602, y: -14.3947, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58442821792574854
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1523685909791788}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.45
 --- !u!114 &114154587598518832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,11 +68,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e0b47bd9f8217b409422677911c7e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 0
-  _lifeSpan: 0
-  _projectileSpeed: 0
+  _damage: 5
+  _lifeSpan: 5
+  _projectileSpeed: 10
   _timeToDestroy: 0
-  Rb: {fileID: 0}
 --- !u!212 &212262044554274558
 SpriteRenderer:
   m_ObjectHideFlags: 1
